@@ -48,12 +48,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 5840594311 # Replace with the actual owner's user ID
+OWNER_ID = 7170328188 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [5840594311]
+SUDO_USERS = [7170328188]
 
-AUTH_CHANNEL = -1002572301679
+AUTH_CHANNEL = -1002100122752
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -105,7 +105,7 @@ async def sudo_command(bot: Client, message: Message):
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/Tushar0125") ],
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/shadow4545") ],
                     [
                     InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/+EcyoxFsuS99mOWM1") ],
                     [
@@ -116,25 +116,13 @@ keyboard = InlineKeyboardMarkup(
     
 # Image URLs for the random image feature
 image_urls = [
-    "https://graph.org/file/996d4fc24564509244988-a7d93d020c96973ba8.jpg",
-    "https://graph.org/file/96d25730136a3ea7e48de-b0a87a529feb485c8f.jpg",
-    "https://graph.org/file/6593f76ddd8c735ae3ce2-ede9fa2df40079b8a0.jpg",
-    "https://graph.org/file/a5dcdc33020aa7a488590-79e02b5a397172cc35.jpg",
-    "https://graph.org/file/0346106a432049e391181-7560294e8652f9d49d.jpg",
-    "https://graph.org/file/ba49ebe9a8e387addbcdc-be34c4cd4432616699.jpg",
-    "https://graph.org/file/26f98dec8b3966687051f-557a430bf36b660e24.jpg",
-    "https://graph.org/file/2ae78907fa4bbf3160ffa-2d69cd23fa75cb0c3a.jpg",
-    "https://graph.org/file/05ef9478729f165809dd7-3df2f053d2842ed098.jpg",
-    "https://graph.org/file/b1330861fed21c4d7275c-0f95cca72c531382c1.jpg",
-    "https://graph.org/file/0ebb95807047b062e402a-9e670a0821d74e3306.jpg",
-    "https://graph.org/file/b4e5cfd4932d154ad6178-7559c5266426c0a399.jpg",
-    "https://graph.org/file/44ffab363c1a2647989bc-00e22c1e36a9fd4156.jpg",
-    "https://graph.org/file/5f0980969b54bb13f2a8a-a3e131c00c81c19582.jpg",
-    "https://graph.org/file/6341c0aa94c803f94cdb5-225b2999a89ff87e39.jpg",
-    "https://graph.org/file/90c9f79ec52e08e5a3025-f9b73e9d17f3da5040.jpg",
-    "https://graph.org/file/1aaf27a49b6bd81692064-30016c0a382f9ae22b.jpg",
-    "https://graph.org/file/702aa31236364e4ebb2be-3f88759834a4b164a0.jpg",
-    "https://graph.org/file/d0c6b9f6566a564cd7456-27fb594d26761d3dc0.jpg",
+ "https://t4.ftcdn.net/jpg/04/86/46/95/360_F_486469596_nGjEYMIl0aJqaDKMmxNqWWuQyPMGzkxk.webp",
+    "https://as2.ftcdn.net/jpg/07/06/20/61/1000_F_706206170_e9MO8tICmvcCZycP0VhLXBKOZONiABrl.jpg",
+    "https://t4.ftcdn.net/jpg/07/18/11/05/360_F_718110593_up4Uv1x1stnjVpq74eJCYRktAEGXqdiy.webp",
+    "https://as1.ftcdn.net/jpg/07/75/55/90/1000_F_775559000_WHSNWoYscIDsEJ9UY5HTQt0owRElYNem.jpg",
+    "https://t4.ftcdn.net/jpg/13/41/02/25/240_F_1341022570_I8ko1yIQLIP5DfU6cqNBNhZez8VVPuQQ.jpg",
+    "https://as2.ftcdn.net/jpg/07/65/22/61/1000_F_765226187_spQzdTNtDaaIICgPPlYdSd18m5dCijhW.jpg",
+    "https://as2.ftcdn.net/jpg/07/56/86/65/1000_F_756866529_5dOPDEiblMXthEB12iGAIlpoguxSlgxt.jpg",
     # Add more image URLs as needed
 ]
 random_image_url = random.choice(image_urls) 
@@ -142,7 +130,7 @@ random_image_url = random.choice(image_urls)
 caption = (
         "**ʜᴇʟʟᴏ👋**\n\n"
         "➠ **ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.**\n"
-        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /tushar.\n"
+        "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /txt.\n"
         "➠ **ғᴏʀ ɢᴜɪᴅᴇ sᴇɴᴅ /help."
 )
     
@@ -190,7 +178,7 @@ async def help_command(client: Client, msg: Message):
     await msg.reply_text(help_text)
 
 # Upload command handler
-@bot.on_message(filters.command(["tushar"]))
+@bot.on_message(filters.command(["txt"]))
 async def upload(bot: Client, m: Message):
     if not is_authorized(m.chat.id):
         await m.reply_text("**🚫You are not authorized to use this bot.**")
@@ -287,9 +275,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/Tushar0125)"
+    credit = "️[Shadowx](https://t.me/Tushar0125)"
     if raw_text3 == '1':
-        CR = '[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/Tushar0125)'
+        CR = '[Shadowx](https://t.me/Tushar0125)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
